@@ -45,7 +45,7 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return id == product.id && price == product.price && Objects.equals(name, product.name);
+        return this.id == product.id && this.price == product.price && Objects.equals(this.name, product.name);
     }
 
     @Override

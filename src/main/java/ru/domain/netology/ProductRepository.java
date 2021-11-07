@@ -12,7 +12,7 @@ public class ProductRepository {
         items = tmp;
     }
 
-    public void removeById (int id){
+    public void removeById(int id) {
         int length = items.length - 1;
         Product[] tmp = new Product[length];
         int index = 0;
@@ -26,18 +26,10 @@ public class ProductRepository {
 
     }
 
-    public Product[] findAll(){
+    public Product[] findAll() {
         return items;
     }
 
-    public Product findById(int id) {
-        for (Product item : items) {
-            if (item.getId() == id) {
-                return item;
-            }
-        }
-        return null;
-    }
 
 }
 
